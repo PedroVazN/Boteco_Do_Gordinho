@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+
 .logo {
     width: 20%;
     height: auto;
@@ -84,9 +85,9 @@
 
 .sobre-container {
     display: flex;
-    flex-direction: column; /* Coloca o título no topo */
+    flex-direction: column; 
     align-items: center;
-    background-color: rgb(120, 134, 107);
+    background-color: #78866b;
     padding: 50px;
     text-align: left;
 }
@@ -101,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Espaço entre imagem e texto */
+    gap: 20px; 
     max-width: 80%;
 }
 
@@ -114,15 +115,16 @@
     color: white;
     font-size: medium;
     font-family: Tahoma;
-    max-width: 60%; /* Define um limite para o texto */
+    max-width: 60%; 
 }
 
 /*Container Nosso Establecimento*/
 
 #titulo_est{
-    margin-top: 20px;
+    padding: 30px;
     font-size: 20px;
     text-align: center;
+    color: white;
 }
 
 .estabelecimento-img{
@@ -131,17 +133,70 @@
     display: flex;
 }
 
-.mapaGeral{
-    background: linear-gradient( to top, rgba(27, 80, 34, 0.5) 0%, rgba(135, 255, 255, 0) 100% );
+.gradientbody{
+    background: rgb(33,36,32);
+    background: linear-gradient(90deg, rgba(33,36,32,1) 0%, rgba(171,190,152,1) 30%, rgba(33,36,32,1) 100%);
 }
 
 .mapaGeral p{
     font-size: 18px;
     font-family: Tahoma;
     text-align: center;
+    color: white;
 }
 
 .mapa{
     margin-left: 25%;
     margin-top: 20px;
 }
+
+/*Nossos produtos*/
+
+#titulo_prod{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.produtos-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    text-align: left;
+}
+
+/*produto-img na direita e listaProdutoTexto na esquerda */
+
+.produto{
+    display: flex;
+    gap: 20px;
+    flex-direction:row;
+    margin-left: 35%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.produto-img{
+    width: 30%;
+    height: auto;
+    justify-content: right;
+    align-items: right;
+    clear: left;
+}
+
+.listaProdutoTexto{
+    font-size: 18px;
+    font-family: Tahoma;
+    color: white;
+}
+
+#titulo_prod{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+
+
+
