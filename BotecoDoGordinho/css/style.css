@@ -84,31 +84,37 @@
 
 .sobre-container {
     display: flex;
+    flex-direction: column; /* Coloca o título no topo */
+    align-items: center;
     background-color: rgb(120, 134, 107);
     padding: 50px;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.sobre-img {
-    width: 20%;
-    height: auto;
-    margin-bottom: 20px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.p_sobrenos {
-    color: white;
-    font-size: medium;
-    font-family: Tahoma;
+    text-align: left;
 }
 
 .titulo_sobrenos {
     color: white;
-    margin-bottom: 1%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espaço entre imagem e texto */
+    max-width: 80%;
+}
+
+.sobre-img {
+    width: 30%;
+    height: auto;
+}
+
+.sobre-texto {
+    color: white;
+    font-size: medium;
+    font-family: Tahoma;
+    max-width: 60%; /* Define um limite para o texto */
 }
 
 /*Container Nosso Establecimento*/
