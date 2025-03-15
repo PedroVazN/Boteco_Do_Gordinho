@@ -46,7 +46,7 @@
 /*Container da Banner*/
 
 .banner-container {
-    background-image: url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-image: url(https://images.pexels.com/photos/941864/pexels-photo-941864.jpeg?cs=srgb&dl=pexels-chanwalrus-941864.jpg&fm=jpg);
     background-size: cover;
     height: 700px;
     justify-content: center;
@@ -57,7 +57,7 @@
     background-position: center;
 }
 
-.buttombanner{
+.buttombanner {
     background-color: #4a794b;
     color: white;
     padding: 15px 20px;
@@ -85,7 +85,7 @@
 
 .sobre-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: #78866b;
     padding: 50px;
@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
     max-width: 80%;
 }
 
@@ -115,50 +115,50 @@
     color: white;
     font-size: medium;
     font-family: Tahoma;
-    max-width: 60%; 
+    max-width: 60%;
 }
 
 /*Container Nosso Establecimento*/
 
-#titulo_est{
+#titulo_est {
     padding: 30px;
     font-size: 20px;
     text-align: center;
     color: white;
 }
 
-.estabelecimento-img{
+.estabelecimento-img {
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
-.gradientbody{
-    background: rgb(33,36,32);
-    background: linear-gradient(90deg, rgba(33,36,32,1) 0%, rgba(171,190,152,1) 30%, rgba(33,36,32,1) 100%);
+.gradientbody {
+    background: rgb(83, 97, 68);
+    background: linear-gradient(90deg, rgba(83, 97, 68, 1) 0%, rgba(171, 190, 152, 1) 50%, rgba(83, 97, 68, 1) 100%);
 }
 
-.mapaGeral p{
+.mapaGeral p {
     font-size: 18px;
     font-family: Tahoma;
     text-align: center;
     color: white;
 }
 
-.mapa{
+.mapa {
     margin-left: 25%;
     margin-top: 20px;
 }
 
 /*Nossos produtos*/
 
-#titulo_prod{
+#titulo_prod {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
 }
 
-.produtos-conteudo{
+.produtos-conteudo {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -168,16 +168,16 @@
 
 /*produto-img na direita e listaProdutoTexto na esquerda */
 
-.produto{
+.produto {
     display: flex;
     gap: 20px;
-    flex-direction:row;
+    flex-direction: row;
     margin-left: 35%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.produto-img{
+.produto-img {
     width: 30%;
     height: auto;
     justify-content: right;
@@ -185,18 +185,52 @@
     clear: left;
 }
 
-.listaProdutoTexto{
+.listaProdutoTexto {
     font-size: 18px;
     font-family: Tahoma;
     color: white;
 }
 
-#titulo_prod{
+#titulo_prod {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
-    color:white;
+    color: white;
 }
 
+.container-video {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
+.footer-container {
 
+    padding: 10px 100px;
+    color: white;
+    text-align: center;
+    background: url(https://c4.wallpaperflare.com/wallpaper/891/64/911/light-line-green-grey-background-hd-wallpaper-preview.jpg
+);
+    background-size: cover;
+    background-position: 50%;
+
+    p {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    img {
+        width: 70px;
+        height: auto;
+    }
+}
+
+#what{
+    margin-right: 6px;
+}
