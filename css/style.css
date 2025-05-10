@@ -134,7 +134,7 @@
 }
 
 .gradientbody {
-    background: rgb(83, 97, 68);
+    background: #536144;
     background: linear-gradient(90deg, rgba(83, 97, 68, 1) 0%, rgba(171, 190, 152, 1) 50%, rgba(83, 97, 68, 1) 100%);
 }
 
