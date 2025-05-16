@@ -146,19 +146,4 @@ nav li{
     margin-right: 6px;
 }
 
-.slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
 
-.slider button{
-    background-color: purple;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    padding: 8px;
-}
