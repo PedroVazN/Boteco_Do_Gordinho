@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boteco do Gordinho</title>
+    <link rel="stylesheet" href="css/estilos_contato.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header-container">
+        <img src="images/logosof2.png" alt="logo" class="logo" />
+
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contato</h1>
+        <ul class="contatos-titulo">
+            <li class="contatos-item">Contatos</li>
+        </ul>
+        <p>Sera uma alegria te atender!</p> <br></br>
+        <form id="frmContato">
+            
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>* Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label>E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+
+                <label>Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                <label>* Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <label>Como prefere o nosso contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                </label>
+
+                <br>
+                <label>Qual o motivo do seu contato?
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Elogio</option>
+                        <option>Reclamação</option>
+                    </select>
+                </label>
+                <br>
+            </fieldset>
+
+            <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input type="submit" id="enviar" value="Enviar formulário" class="enviar">
+        </form>
+
+
+
+
+        <footer class="footer-container">
+            <img src="images/logobranca.png" alt="logo" class="logo-footer">
+            <p>Todos os direitos reservados © Boteco Do Gordinho 2025</p>
+            <p><i class="fa fa-whatsapp" id="what"></i>11 93453-3432</p>
+            <p><i class="fa fa-google" id="what"></i>boteco.gordinho@gmail.com</p>
+        </footer>
+
+
+
+
+
+    </main>
+
+</body>
+
+</html>
