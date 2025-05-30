@@ -12,16 +12,30 @@
     <script>
         alert("Seja bem-vindo ao Boteco do Gordinho! Aqui você encontra os melhores petiscos e bebidas geladas! Aproveite!")
 
-        data = new Date();
-        dia = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
-        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
-
         //Função para abrir a POP de detalhes do produto
-        function abrirPopUp(nome, imagem, descricao) {
-            const url = `pop_produto.html?nomeProd=${encodeURIComponent(nome)} &imagemProd= ${encodeURIComponent(imagem)} &descricaoProd= ${encodeURIComponent(descricao)}`;
+        function abrirDetalhes(nome, sliderImagens, descricao) {
+            const imagensString = sliderImagens.join(',');
+            const url = `pop_produto.html?nomeProd=${encodeURIComponent(nome)}&imagemProd=${encodeURIComponent(imagensString)}&descricaoProd=${encodeURIComponent(descricao)}`;
             window.open(url, "_blank", "width=600,height=400");
         }
 
+        desc_prod1="Fígado grelhado com cebolas caramelizadas, um clássico da culinária brasileira preparado com todo carinho e temperos especiais.";
+        desc_prod2="Peito de frango ao molho especial da casa, suculento e saboroso, acompanhado de nossos temperos únicos.";
+        desc_prod3="Filé de frango grelhado com temperos especiais, macio e bem temperado, ideal para quem busca sabor e qualidade.";
+        desc_prod4="Contra filé grelhado no ponto de sua preferência, carne nobre e suculenta preparada com maestria.";
+        desc_prod5="Clássico filé de frango à parmegiana com molho caseiro e queijo gratinado, uma delícia irresistível.";
+        desc_prod6="Tradicional filé à parmegiana com queijo gratinado, feito com carne de primeira qualidade e nosso molho especial.";
+        desc_prod7="Filé de tilápia grelhado com ervas finas, peixe fresco e saboroso preparado de forma saudável e deliciosa.";
+        desc_prod8="Filé de tilápia empanado crocante, douradinho por fora e macio por dentro, uma opção irresistível.";
+
+        slider1=['https://lh3.googleusercontent.com/p/AF1QipMQlwVcDVkv0aPG2l9MrjWhHaBOb2QnK4-VfyU7=s680-w680-h510','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1M0D3oydsDMK3N4OCctIqsbe2oy2vTRAqrw&s'];
+        slider2=['https://lh3.googleusercontent.com/p/AF1QipMgwF9jxQDgRHRsdI9pgG3ozL3tfUgf3lLyup3X=s680-w680-h510','https://i0.wp.com/espetinhodesucesso.com/wp-content/uploads/2025/03/Frango-ao-molho-pardo.jpg?resize=800%2C450&ssl=1'];
+        slider3=['https://receitatodahora.com.br/wp-content/uploads/2023/04/file-de-frango-18-04.jpg','https://espetinhodesucesso.com/wp-content/uploads/2022/06/como-se-tempera-file-de-frango.jpg'];
+        slider4=['https://topview.com.br/wp-content/uploads/2017/12/contra-file.jpg','https://minervafoods.com/wp-content/uploads/2022/12/contra_file_horizontal-scaled-1.jpg'];
+        slider5=['https://receitatodahora.com.br/wp-content/uploads/2024/06/frango-a-parmegiana-1906.jpg','https://www.estadao.com.br/resizer/v2/ZEIMFVFYV5GABH6YH52MAFRN5A.jpg?quality=80&auth=7ba1eec02078d7d35e0d18afc50a6e3de19c9fbf671835fbda5edbe37998a24f&width=720&height=410&focal=406,339'];
+        slider6=['https://lh3.googleusercontent.com/p/AF1QipOmHEjwvesYITCYA76s-4pjr0TzoOv163besyji=s680-w680-h510','https://static.itdg.com.br/images/640-440/f050711088de12b04bf3765ce6dfce8f/342842-original.jpg'];
+        slider7=['https://www.minhareceita.com.br/app/uploads/2021/02/file-de-tilapia-grelhada-portal-minha-receita.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXO1o60DpQVYPLm-BBZvLWBjky12HllCNoCg&s'];
+        slider8=['https://www.oliberal.com/image/contentid/policy:1.512441:1647872530/peixe-empanado-almoco-21-03.png?f=3x2&$p$f=a7ee74b','https://swiftbr.vteximg.com.br/arquivos/ids/206329-768-768/618254-file-de-tilapia-empanado_3.jpg.jpg?v=638809328830830000'];
 
     </script>
 </head>
@@ -55,50 +69,69 @@
             Venha experimentar nossas delícias e aproveite momentos incríveis com os amigos!
         </p>
         <div class="container">
-            <script>
-                slider=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QmNepXVP-dA9dQOVD8Q9YQMqGL5FPL86TA&s","https://www.minhareceita.com.br/app/uploads/2022/05/Bolinho-de-feijoada1200-1.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbriXRRo1Y6A7-kxt5Y27bBPkQ4ZoCIardcg&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnXu2qSDPPFQw4jZCFhkCn7H21SireqAAOw&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPU1OtKYn3AOSV6NdbrdAGH9rc1-kBBp_zCA&s"];
-            </script>
 
-            <div class="card" onclick="abrirPopUp('Frango a Passarinho', slider, 'Frango temperado e frito na medida certa, crocante por fora e suculento por dentro.')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_QmNepXVP-dA9dQOVD8Q9YQMqGL5FPL86TA&s"
-                    alt="Porção de Frango" class="card-img">
-                <h3 class="card-title">Porção de Frango a Passarinho</h3>
-                <p class="card-text">Frango temperado e frito na medida certa, crocante por fora e suculento por dentro.
-                </p>
-                <span class="preco">R$ 35,00</span>
+            <div class="card" onclick="abrirDetalhes('Fígado Acebolado', slider1, desc_prod1)">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMQlwVcDVkv0aPG2l9MrjWhHaBOb2QnK4-VfyU7=s680-w680-h510"
+                    alt="Fígado Acebolado" class="card-img">
+                <h3 class="card-title">Fígado Acebolado</h3>
+                <p class="card-text">Fígado grelhado com cebolas caramelizadas</p>
+                <span class="preco">R$ 28,00</span>
             </div>
 
-            <div class="card" onclick="abrirPopUp('Bolinho de Feijoada', slider, 'Uma explosão de sabor com recheio de couve e bacon, acompanhado de molho especial.')">
-                <img src="https://www.minhareceita.com.br/app/uploads/2022/05/Bolinho-de-feijoada1200-1.jpg"
-                    alt="Bolinho de Feijoada" class="card-img">
-                <h3 class="card-title">Bolinho de Feijoada</h3>
-                <p class="card-text">Uma explosão de sabor com recheio de couve e bacon, acompanhado de molho especial.
-                </p>
-                <span class="preco">R$ 25,00</span>
+            <div class="card" onclick="abrirDetalhes('Frango ao Molho', slider2, desc_prod2)">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMgwF9jxQDgRHRsdI9pgG3ozL3tfUgf3lLyup3X=s680-w680-h510"
+                    alt="Frango ao Molho" class="card-img">
+                <h3 class="card-title">Frango ao Molho</h3>
+                <p class="card-text">Peito de frango ao molho especial da casa</p>
+                <span class="preco">R$ 28,00</span>
             </div>
 
-            <div class="card" onclick="abrirPopUp('Pastel', slider, 'Recheado com carne, queijo ou palmito, sempre crocante e delicioso.')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbriXRRo1Y6A7-kxt5Y27bBPkQ4ZoCIardcg&s"
-                    alt="Pastel" class="card-img">
-                <h3 class="card-title">Pastel</h3>
-                <p class="card-text">Recheado com carne, queijo ou palmito, sempre crocante e delicioso.</p>
-                <span class="preco">R$ 8,00</span>
+            <div class="card" onclick="abrirDetalhes('Filé de Frango', slider3, desc_prod3)">
+                <img src="https://receitatodahora.com.br/wp-content/uploads/2023/04/file-de-frango-18-04.jpg"
+                    alt="Filé de Frango" class="card-img">
+                <h3 class="card-title">Filé de Frango</h3>
+                <p class="card-text">Filé de frango grelhado com temperos especiais</p>
+                <span class="preco">R$ 28,00</span>
             </div>
 
-            <div class="card" onclick="abrirPopUp('Caldo de Mocoto', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnXu2qSDPPFQw4jZCFhkCn7H21SireqAAOw&s', 'O clássico caldo de mocotó para esquentar e revigorar.')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnXu2qSDPPFQw4jZCFhkCn7H21SireqAAOw&s"
-                    alt="Caldo de Mocotó" class="card-img">
-                <h3 class="card-title">Caldo de Mocotó</h3>
-                <p class="card-text">O clássico caldo de mocotó para esquentar e revigorar.</p>
-                <span class="preco">R$ 20,00</span>
+            <div class="card" onclick="abrirDetalhes('Contra Filé', slider4, desc_prod4)">
+                <img src="https://topview.com.br/wp-content/uploads/2017/12/contra-file.jpg"
+                    alt="Contra Filé" class="card-img">
+                <h3 class="card-title">Contra Filé</h3>
+                <p class="card-text">Contra filé grelhado no ponto de sua preferência</p>
+                <span class="preco">R$ 36,00</span>
             </div>
 
-            <div class="card" onclick="abrirPopUp('Torresmo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPU1OtKYn3AOSV6NdbrdAGH9rc1-kBBp_zCA&s', 'Torresmo sequinho e crocante, perfeito para acompanhar uma cerveja gelada.')">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPU1OtKYn3AOSV6NdbrdAGH9rc1-kBBp_zCA&s"
-                    alt="Torresmo" class="card-img">
-                <h3 class="card-title">Torresmo Crocante</h3>
-                <p class="card-text">Torresmo sequinho e crocante, perfeito para acompanhar uma cerveja gelada.</p>
-                <span class="preco">R$ 30,00</span>
+            <div class="card" onclick="abrirDetalhes('Filé à Parmegiana de Frango', slider5, desc_prod5)">
+                <img src="https://receitatodahora.com.br/wp-content/uploads/2024/06/frango-a-parmegiana-1906.jpg"
+                    alt="Filé à Parmegiana de Frango" class="card-img">
+                <h3 class="card-title">Filé à Parmegiana de Frango</h3>
+                <p class="card-text">Clássico filé de frango à parmegiana com molho caseiro</p>
+                <span class="preco">R$ 40,00</span>
+            </div>
+
+            <div class="card" onclick="abrirDetalhes('Filé à Parmegiana de Carne', slider6, desc_prod6)">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOmHEjwvesYITCYA76s-4pjr0TzoOv163besyji=s680-w680-h510"
+                    alt="Filé à Parmegiana de Carne" class="card-img">
+                <h3 class="card-title">Filé à Parmegiana de Carne</h3>
+                <p class="card-text">Tradicional filé à parmegiana com queijo gratinado</p>
+                <span class="preco">R$ 53,00</span>
+            </div>
+
+            <div class="card" onclick="abrirDetalhes('Filé de Tilápia', slider7, desc_prod7)">
+                <img src="https://www.minhareceita.com.br/app/uploads/2021/02/file-de-tilapia-grelhada-portal-minha-receita.jpg"
+                    alt="Filé de Tilápia" class="card-img">
+                <h3 class="card-title">Filé de Tilápia</h3>
+                <p class="card-text">Filé de tilápia grelhado com ervas</p>
+                <span class="preco">R$ 46,00</span>
+            </div>
+
+            <div class="card" onclick="abrirDetalhes('Filé de Tilápia Empanado', slider8, desc_prod8)">
+                <img src="https://www.oliberal.com/image/contentid/policy:1.512441:1647872530/peixe-empanado-almoco-21-03.png?f=3x2&$p$f=a7ee74b"
+                    alt="Filé de Tilápia Empanado" class="card-img">
+                <h3 class="card-title">Filé de Tilápia Empanado</h3>
+                <p class="card-text">Filé de tilápia empanado crocante</p>
+                <span class="preco">R$ 38,00</span>
             </div>
 
         </div>

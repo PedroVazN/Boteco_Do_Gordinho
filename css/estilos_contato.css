@@ -1,12 +1,12 @@
 /*Estilização do MENU do site*/
-nav{
-    color: rgb(0, 89, 255);
+nav {
+    color: #f5f1e8;
     font-size: 24px;
     position: static;
     margin: 0;
 }
 
-nav li{
+nav li {
     display: inline;
     margin-right: 55px;
 }
@@ -16,143 +16,208 @@ nav li{
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px 0px 100px;
-    background-color: rgb(120, 134, 107);
+    background-color: #2d5016;
 }
 
 /*Nav da Header*/
 .nav-container {
     display: flex;
     justify-content: space-between;
-    font-size: 28;
+    font-size: 28px;
     position: relative;
     right: 150px;
-
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    li {
-        display: inline;
-        margin-right: 20px;
-        ;
-    }
 }
 
-
-.icon{
-    margin-left: 10%;
-    width: 3%;
-    margin-right: 10px;
+.nav-container a {
+    text-decoration: none;
+    color: #f5f1e8;
+    transition: color 0.3s ease;
+    font-weight: 500;
 }
 
-/*Estilização do BODY da página*/
-body{
-    padding: 0;
-    margin: 0;
-    background: rgb(83, 97, 68);
-    background: linear-gradient(90deg, rgba(83, 97, 68, 1) 0%, rgba(171, 190, 152, 1) 50%, rgba(83, 97, 68, 1) 100%);
+.nav-container a:hover {
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
 }
 
-.logo{
+.nav-container li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.logo {
     width: 20%;
     margin-right: 20px;
 }
 
-*Titulo*/
-.produtos-contatos{
-    font-family: cursive;
-    font-size: 40px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    list-style: none;
-
-    
+/*Estilização do BODY da página*/
+body {
+    padding: 0;
+    margin: 0;
+    background: #29401E;
+    background: linear-gradient(90deg, rgba(41, 64, 30, 1) 0%, rgba(57, 130, 29, 1) 100%);
+    font-family: Tahoma, sans-serif;
 }
 
-/*Estilização do container dos produtos*/
-.contatos-item::before{
-    content: "🍔";
+main {
+    background: #e8e2d4;
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(45, 80, 22, 0.4);
+    border: 3px solid #d4af37;
 }
 
-.texto-contatos{
-    padding-left: 5%;
+main h1 {
+    text-align: center;
+    color: #2d5016;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main p {
+    text-align: center;
+    color: #2d5016;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 
 /*Formulário*/
-form{
-	margin-top: 20px;
-	margin-left: 20%;
-    margin-bottom: 0;
-}
-form label, form legend{
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-fieldset{
-	width: 75%;
-	padding-left: 5%;
-	margin-bottom: 2%;
-}
-.input-padrao{
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 85%;
-}
-.chk{
-	margin: 20px 0;
-}
-.enviar{
-	width: 40%;
-	padding: 15px 0;
-    margin-bottom: 20px;
-	background: orange;
-	color: white;
-	font-weight: bold;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-}
-.enviar:hover{
-	background: darkorange;
-	transform: scale(1.2);
+form {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*Div do retorno do formulário*/
-.divRetorno{
-    display: none;
-    margin-bottom: 15px;
+form label,
+form legend {
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+    color: #2d5016;
+    font-weight: 500;
 }
-.divRetorno p{
-    font-size: 24px;
+
+fieldset {
+    width: 90%;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+    background: rgba(212, 175, 55, 0.1);
+}
+
+fieldset legend {
+    color: #c41e3a;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 12px 20px;
+    width: 90%;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-family: Tahoma;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-padrao:focus {
+    border-color: #c41e3a;
+    box-shadow: 0 0 8px rgba(196, 30, 58, 0.3);
+    outline: none;
+}
+
+select {
+    padding: 12px 20px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-family: Tahoma;
+    font-size: 16px;
+    color: #2d5016;
+    background: #f5f1e8;
+    width: 100%;
+}
+
+.checkbox-container {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.chk {
+    margin: 0 10px 0 0;
+    transform: scale(1.2);
+}
+
+.button-container {
+    width: 90%;
+    text-align: center;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    background: #c41e3a;
+    color: #f5f1e8;
+    font-weight: bold;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+.enviar:hover {
+    background: #d4af37;
+    color: #2d5016;
+    border-color: #c41e3a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
 }
 
 .footer-container {
-
     padding: 10px 100px;
-    color: white;
+    color: #f5f1e8;
     text-align: center;
-    background: url(https://media.gettyimages.com/id/1473729127/pt/v%C3%ADdeo/beautiful-abstract-particle-background-seamlessly-loopable-animation-green-version-design.jpg?s=640x640&k=20&c=dXVW0M9oQs-lX2zW3KwbbTfexK66JIZtg4WIYmHh9EQ=);
-    background-size: cover;
-    background-position: 50%;
-
-    p {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-    }
-
-    img {
-        width: 70px;
-        height: auto;
-    }
+    background: #2d5016;
+    border-top: 4px solid #d4af37;
 }
 
-#what{
-    margin-right: 6px;
+.footer-container p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: Tahoma;
+}
+
+.footer-container img {
+    width: 70px;
+    height: auto;
+    filter: brightness(1.2) saturate(1.1);
+}
+
+#what {
+    margin-right: 8px;
+    color: #d4af37;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#what:hover {
+    color: #5a7c32;
+    text-shadow: 0 0 6px #5a7c32;
 }
