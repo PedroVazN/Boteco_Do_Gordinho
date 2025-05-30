@@ -236,15 +236,6 @@
     box-shadow: 0 3px 10px rgba(90, 124, 50, 0.3);
 }
 
-.listaProdutoTexto ul li::before {
-    position: absolute;
-    left: -8px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #f5f1e8;
-    border-radius: 50%;
-    padding: 2px;
-}
 
 .container-video {
     align-content: center;

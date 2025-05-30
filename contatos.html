@@ -33,21 +33,21 @@
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label>* Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+                <input type="text" id="nomesobrenome" name="nome" class="input-padrao" required>
 
                 <label>E-mail</label>
-                <input type="email" id="email" name="" class="input-padrao" placeholder="seuemail@dominio.com">
+                <input type="email" id="email" name="email" class="input-padrao" placeholder="seuemail@dominio.com">
 
                 <label>Telefone</label>
-                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
 
                 <label>* Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <textarea cols="70" rows="10" id="mensagem" name="msg" class="input-padrao" required></textarea>
 
                 <label>Como prefere o nosso contato?
-                    <input type="radio" value="radio-mail" name="Contato"> E-mail
-                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
-                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                    <input type="radio" value="radio-mail" name="contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="contato"> Whatsapp
                 </label>
 
                 <br>
@@ -64,13 +64,29 @@
             </fieldset>
 
             <div class="checkbox-container">
-                <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidades por e-mail?</label>
+                <label><input type="checkbox" name="bo" class="chk"> Gostaria de receber nossas novidades por e-mail?</label>
             </div>
 
             <div class="button-container">
                 <input type="submit" id="enviar" value="Enviar Mensagem" class="enviar">
             </div>
         </form>
+
+        <script>
+            document.getElementById("frmContato").addEventListener("submit", function(event){
+            event.preventDefault();
+
+            const nome = event.target.nome.value;
+            const email = event.target.email.value;
+            const telefone = event.target.telefone.value;
+            const msg = event.target.msg.value;
+            const contato = event.target.contato.value;
+            const bo = event.target.bo.value;
+
+
+            alert ("Nome: " + nome +"\nEmail: " + email + "\nTelefone: " + telefone + "\nMsg: " + msg + "\nContato: " + contato + "\nReceber Email: " +bo);
+            });
+        </script>
     </main>
 
     <!--Rodapé-->
