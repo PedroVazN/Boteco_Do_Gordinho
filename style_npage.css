@@ -1,0 +1,58 @@
+/*Container da Header*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    background-color: #2d5016;
+}
+
+/*Nav da Header*/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    position: relative;
+    right: 150px;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #f5f1e8;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-container a:hover {
+    color: #d4af37;
+    text-shadow: 0 0 8px #d4af37;
+}
+
+.nav-container li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.contatos-titulos{
+
+}
+
+/*Table*/
+
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+
+td, th{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th{
+    font-weight: bold;
+    background-color: #EEE;
+}
