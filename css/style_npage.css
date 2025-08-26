@@ -56,3 +56,12 @@ th{
     font-weight: bold;
     background-color: #EEE;
 }
+
+.info-invalida{
+    background-color: red;
+    color: white;
+}
+
+.info-unitario{
+    color: rgb(255, 0, 0);
+}

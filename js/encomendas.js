@@ -16,18 +16,14 @@ for (var count = 0; count < clientes.length; count++) {
     if (tab_qtde < 1 || isNaN(tab_qtde)) {
         // quantidade invalida
         clientes[count].querySelector(".qtde").textContent = "Quantidade invalida";
-
-        //clientes[count].querySelector(".qtde").computedStyleMap.color = "red";
-        //Texto da quantidade em vermelho
-
-        clientes[count].style.backgroundColor = "red";
+        clientes[count].classList.add("info-invalida");
     }
 
     else if (tab_unitario < 1 || isNaN(tab_unitario)) {
 
         clientes[count].querySelector(".unitario").textContent = "Valor Unitario";
 
-        clientes[count].querySelector(".unitario").style.color = "red";
+        clientes[count].querySelector(".unitario").classList.add("info-unitario");
 
 
     } else {
