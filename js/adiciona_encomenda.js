@@ -8,22 +8,20 @@ botaoAdicionar.addEventListener("click", function (event) {
     const nomeCliente = document.getElementById("nome").value
     const unit = document.getElementById("unit").value
     const qtde = document.getElementById("qtde").value
-    const produto = document.getElementById("produto").value
+    const produto = document.getElementById("produtot").value
 
     var novaTr = document.createElement("tr");
 
     novaTr.innerHTML = `
-        <td>${nomeCliente}</td>,
-        <td>${qtde}</td>,
-        <td>${unit}</td>,
+        <td>${nomeCliente}</td>
         <td>${produto}</td>
+        <td>${qtde}</td>
+        <td>${unit}</td>
+        <td>${qtde * unit}</td>
     `;
-
-    var novaTd = document.createElement("td");
-    novaTr.appendChild(novaTd);
 
     table.appendChild(novaTr)
 
-    console.log("Botao clicado")
+    console.log("Botao clicado") 
 
 })
