@@ -72,3 +72,20 @@ th{
     margin-bottom: 15px;
    
 }
+
+/* Efeito para ele sumir quando excluido */
+
+.fadeOut{
+    opacity: 0;
+    transition: 1s
+}
+
+#filtrar-tabela{
+    width: 10.5%;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.invisivel{
+    display: none;
+}
